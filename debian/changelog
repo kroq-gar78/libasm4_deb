@@ -1,0 +1,160 @@
+asm3 (3.3.2-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release.
+  * Change debian/watch to point to upstream's SVN repository. Add
+    debian/orig-tar.sh.
+  * Remove all prebuilt jar files from orig tarball.
+  * Install asm-debug-all.jar.
+  * Do no longer install symlinks from asm3-all.jar to the individual jars.
+    Install the real files instead.
+  * Use upstream provided pom files instead of shipping them in the debian
+    directory.
+
+ -- Torsten Werner <twerner@debian.org>  Mon, 12 Sep 2011 13:50:38 +0200
+
+asm3 (3.3.1-1) unstable; urgency=low
+
+  [ Paul Tagliamonte ]
+  * Team upload.
+  * Bumped Standards-Version to 3.9.2, no changes required.
+  * Changed debian/copyright to use DEP5, this should get rid of
+    the two existing lintian warnings about copyright.
+
+  [ Niels Thykier ]
+  * Bumped debhelper compat to 7.
+  * Updated clean target to clean up after the maven helpers.
+
+ -- Paul Tagliamonte <paultag@ubuntu.com>  Wed, 03 Aug 2011 15:07:14 +0000
+
+asm3 (3.2-4) unstable; urgency=low
+
+  * Removed Barry Hawkins from Uploaders; Thanks for your work
+    on this package in the past.
+  * Converted source to 3.0 (quilt).
+
+ -- Niels Thykier <niels@thykier.net>  Sat, 29 May 2010 12:40:59 +0200
+
+asm3 (3.2-3) unstable; urgency=low
+
+  * Added myself to Uploaders.
+  * Added a fix to the OSGi-metadata for the asm3-all jar and install
+    said jar (it is needed by eclipse).
+  * Replaced all other jars with a symlink to the asm3-all jar.
+  * Bumped Standards-Version to 3.8.4 - no changes required.
+  * Bumped debhelper compat to 7.
+
+ -- Niels Thykier <niels@thykier.net>  Wed, 10 Feb 2010 22:01:29 +0100
+
+asm3 (3.2-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Torsten Werner <twerner@debian.org>  Sun, 09 Aug 2009 10:10:09 +0200
+
+asm3 (3.2-1) experimental; urgency=low
+
+  [Ludovic Claude]
+  * New upstream version, add myself to Uploaders
+  * Change section to java, bump up Standards-Version to 3.8.1
+  * Use cdbs for the build
+  * Add the Maven POM to the package,
+  * Add a Build-Depends-Indep dependency on maven-repo-helper
+  * Use mh_installpom and mh_installjar to install the POM and the jar to the
+    Maven repository
+  * Add ${misc:Depends} to Depends to clear Lintian warnings  
+  * Change the dependency on java-gcj to default-jdk
+  * Remove Depends on Java runtimes as it is a library
+
+  [Damien Raude-Morvan]
+  * Removed Marcus Crafter from Uploaders (Closes: #521480)
+
+ -- Ludovic Claude <ludovic.claude@laposte.net>  Fri, 15 May 2009 19:59:46 +0100
+
+asm3 (3.1-2) unstable; urgency=low
+
+  * Cleaned up diff.gz and removed patch to asm 3.0.
+  * Cleaned up debian/copyright.
+  * Build package in binary-indep target of debian/rules.
+  * Don't Build-Depend on dpatch.
+  * Don't use '-1' in Build-Depends.
+  * Updated Standards-Version to 3.7.3.
+  * Added Vcs-Svn and Vcs-Browser fields.
+  * Changed watch file to another mirror.
+
+ -- Michael Koch <konqueror@gmx.de>  Sat, 26 Apr 2008 23:26:33 +0200
+
+asm3 (3.1-1) unstable; urgency=low
+
+  * New upstream version.
+  * Fixed watch file to point to the correct upstream download.
+  * Updated debhelper level to 5.
+  * Added Homepage field to debian/control.
+
+ -- Michael Koch <konqueror@gmx.de>  Tue, 30 Oct 2007 08:35:02 +0100
+
+asm3 (3.0+svn20070511-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/ant.properties: fixed path to local java api docs
+
+ -- Michael Koch <konqueror@gmx.de>  Fri, 11 May 2007 09:09:29 -0100
+
+asm3 (3.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Michael Koch <konqueror@gmx.de>  Mon, 16 Apr 2007 22:00:36 +0200
+
+asm (1.5.3-4) unstable; urgency=low
+
+  * Updated standards version and uploader email
+  * Added Section: specifications for binary packages
+
+ -- Barry Hawkins <barry@alltc.com>  Sat, 06 May 2006 21:48:59 -0400
+
+asm (1.5.3-3) unstable; urgency=low
+
+  * kaffe compiler transition
+  * Added myself to uploaders
+
+ -- Wolfgang Baer <WBaer@gmx.de>  Mon, 16 Jan 2006 14:29:46 +0100
+
+asm (1.5.3-2) unstable; urgency=low
+
+  * Added missing dpatch build dependency (Closes: #328741) 
+
+ -- Barry Hawkins <barry@bytemason.org>  Sat, 17 Sep 2005 16:37:36 -0400
+
+asm (1.5.3-1) unstable; urgency=low
+
+  * New upstream version.
+  * Package moved to main using kaffe and ant (Closes: #310237)
+  * Removed ow_util_ant_tasks.uue and build against libow-util-ant-tasks-java
+  * Removed sharutils build dependency - no longer needed
+  * Removed ${misc:Depends} from depends - not needed in binary all package
+  * Adjusted build-dep on libow-util-ant-tasks-java to fixed 1.3-2 version
+  * Fixed description to make linda happy
+  * Package moved into Debian Java Maintainers project
+  * Updated standards version to 3.6.2
+
+ -- Barry Hawkins <barry@bytemason.org>  Wed, 17 Aug 2005 00:18:39 -0400
+
+asm (1.5.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Marcus Crafter <crafterm@debian.org>  Sat, 18 Dec 2004 23:05:32 +0100
+
+asm (1.4.3-2) unstable; urgency=low
+
+  * Fixed broken link to asm.jar
+
+ -- Marcus Crafter <crafterm@debian.org>  Wed,  1 Sep 2004 22:30:33 +0200
+
+asm (1.4.3-1) unstable; urgency=low
+
+  * Initial Release.
+    (closes: #268643)
+
+ -- Marcus Crafter <crafterm@debian.org>  Fri, 27 Aug 2004 19:08:25 +0200

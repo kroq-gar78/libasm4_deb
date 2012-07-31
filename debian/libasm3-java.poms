@@ -1,0 +1,10 @@
+target/poms/asm-parent.pom --no-parent
+target/poms/asm-analysis.pom
+target/poms/asm-commons.pom
+target/poms/asm-tree.pom
+target/poms/asm-util.pom
+target/poms/asm-xml.pom
+target/poms/asm.pom
+target/poms/asm-debug-all.pom
+target/poms/asm-all.pom
+

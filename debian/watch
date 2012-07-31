@@ -1,0 +1,6 @@
+version=3
+
+opts=uversionmangle=s/_/./g \
+    http://websvn.ow2.org/listing.php?repname=asm&path=%2Ftags%2F .*%2Ftags%2FASM_([\d_]*)%2F \
+    debian debian/orig-tar.sh
+

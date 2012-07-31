@@ -1,0 +1,39 @@
+Source: asm3
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Michael Koch <konqueror@gmx.de>, Ludovic Claude <ludovic.claude@laposte.net>,
+ Niels Thykier <niels@thykier.net>
+Build-Depends: debhelper (>= 7), cdbs, default-jdk
+Build-Depends-Indep: maven-repo-helper, ant (>= 1.6.5), libow-util-ant-tasks-java (>= 1.3-2), javahelper
+Standards-Version: 3.9.2
+Vcs-Svn: svn://svn.debian.org/svn/pkg-java/trunk/asm3
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-java/trunk/asm3
+Homepage: http://asm.objectweb.org/
+
+Package: libasm3-java
+Architecture: all
+Depends: ${misc:Depends}
+Description: Java bytecode manipulation framework
+ It can be used to dynamically generate stub classes or other proxy classes,
+ directly in binary form, or to dynamically modify classes at load time, i.e.,
+ just before they are loaded into the Java Virtual Machine.
+ .
+ ASM offers similar functionalities as BCEL or SERP, but is much smaller
+ (25KB instead of 350KB for BCEL and 150KB for SERP) and faster
+ than these tools (the overhead of a load time class transformation is on
+ the order of 60% with ASM, 700% or more with BCEL, and 1100% or more with
+ SERP). ASM was designed to be used in a dynamic and static way and was
+ therefore designed and implemented to be as small and as fast as possible.
+
+Package: libasm3-java-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Suggests: libasm3-java
+Description: Documentation for ASM, the Java(TM) bytecode manipulation framework
+ It can be used to dynamically generate stub classes or other proxy classes,
+ directly in binary form, or to dynamically modify classes at load time, i.e.,
+ just before they are loaded into a Java(TM) Virtual Machine.
+ .
+ This package includes the API Javadoc and examples.
