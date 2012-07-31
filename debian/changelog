@@ -1,3 +1,10 @@
+asm4 (4.0-1) precise; urgency=low
+
+  * New upstream release.
+  * debian/control: bump Standards-Version to 3.9.3
+
+ -- Aditya Vaidya <kroq.gar78@gmail.com>  Tue, 31 Jul 2012 00:14:33 -0500
+
 asm3 (3.3.2-1) unstable; urgency=low
 
   * Team upload.

@@ -1,4 +1,4 @@
-Source: asm3
+Source: asm4
 Section: java
 Priority: optional
 Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
@@ -6,12 +6,12 @@ Uploaders: Michael Koch <konqueror@gmx.de>, Ludovic Claude <ludovic.claude@lapos
  Niels Thykier <niels@thykier.net>
 Build-Depends: debhelper (>= 7), cdbs, default-jdk
 Build-Depends-Indep: maven-repo-helper, ant (>= 1.6.5), libow-util-ant-tasks-java (>= 1.3-2), javahelper
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Vcs-Svn: svn://svn.debian.org/svn/pkg-java/trunk/asm3
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-java/trunk/asm3
 Homepage: http://asm.objectweb.org/
 
-Package: libasm3-java
+Package: libasm4-java
 Architecture: all
 Depends: ${misc:Depends}
 Description: Java bytecode manipulation framework
@@ -26,7 +26,7 @@ Description: Java bytecode manipulation framework
  SERP). ASM was designed to be used in a dynamic and static way and was
  therefore designed and implemented to be as small and as fast as possible.
 
-Package: libasm3-java-doc
+Package: libasm4-java-doc
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
