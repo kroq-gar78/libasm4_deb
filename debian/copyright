@@ -3,7 +3,7 @@ Name: asm
 Source: http://download.forge.objectweb.org/asm/
 
 Files: *
-Copyright: 2004-2008 Eric Bruneton, Eugene Kuleshov
+Copyright: 2000-2011 INRIA, France Telecom
 License: BSD
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions
@@ -30,7 +30,7 @@ License: BSD
   THE POSSIBILITY OF SUCH DAMAGE.
 
 Files: debian/*
-Copyright: Copyright (c) 2004-2011 Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Copyright: Copyright (c) 2004-2012 Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
 License: BSD
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions
