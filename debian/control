@@ -30,7 +30,7 @@ Package: libasm4-java-doc
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
-Suggests: libasm3-java
+Suggests: libasm4-java
 Description: Documentation for ASM, the Java(TM) bytecode manipulation framework
  It can be used to dynamically generate stub classes or other proxy classes,
  directly in binary form, or to dynamically modify classes at load time, i.e.,

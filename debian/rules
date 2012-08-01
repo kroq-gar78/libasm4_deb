@@ -18,20 +18,20 @@ binary-post-install/lib$(PACKAGE)-java::
 	mkdir -p target/poms/
 	set -eu; cd archive; for POM in *.pom; do sed "s,@product.artifact@,$(VERSION)," $$POM > ../target/poms/$$POM; done
 	mh_installpoms -plib$(PACKAGE)-java -e$(VERSION)
-	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm3 -e$(VERSION) target/poms/asm.pom output/dist/lib/asm-$(VERSION).jar
-	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm3-analysis -e$(VERSION) target/poms/asm-analysis.pom output/dist/lib/asm-analysis-$(VERSION).jar
-	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm3-commons -e$(VERSION) target/poms/asm-commons.pom output/dist/lib/asm-commons-$(VERSION).jar
-	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm3-tree -e$(VERSION) target/poms/asm-tree.pom output/dist/lib/asm-tree-$(VERSION).jar
-	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm3-util -e$(VERSION) target/poms/asm-util.pom output/dist/lib/asm-util-$(VERSION).jar
-	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm3-xml -e$(VERSION) target/poms/asm-xml.pom output/dist/lib/asm-xml-$(VERSION).jar
-	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm3-debug-all -e$(VERSION) target/poms/asm-debug-all.pom output/dist/lib/all/asm-debug-all-$(VERSION).jar
+	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm4 -e$(VERSION) target/poms/asm.pom output/dist/lib/asm-$(VERSION).jar
+	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm4-analysis -e$(VERSION) target/poms/asm-analysis.pom output/dist/lib/asm-analysis-$(VERSION).jar
+	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm4-commons -e$(VERSION) target/poms/asm-commons.pom output/dist/lib/asm-commons-$(VERSION).jar
+	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm4-tree -e$(VERSION) target/poms/asm-tree.pom output/dist/lib/asm-tree-$(VERSION).jar
+	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm4-util -e$(VERSION) target/poms/asm-util.pom output/dist/lib/asm-util-$(VERSION).jar
+	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm4-xml -e$(VERSION) target/poms/asm-xml.pom output/dist/lib/asm-xml-$(VERSION).jar
+	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm4-debug-all -e$(VERSION) target/poms/asm-debug-all.pom output/dist/lib/all/asm-debug-all-$(VERSION).jar
 	# add osgi headers to asm3-all
 	jar umf debian/osgi.MF output/dist/lib/all/asm-all-$(VERSION).jar
 	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm3-all -e$(VERSION) target/poms/asm-all.pom output/dist/lib/all/asm-all-$(VERSION).jar
 
 binary-post-install/lib$(PACKAGE)-java-doc::
-	dh_install -plib$(PACKAGE)-java-doc output/dist/doc/javadoc/user/* usr/share/doc/libasm3-java-doc/api
-	dh_install -plib$(PACKAGE)-java-doc output/dist/examples usr/share/doc/libasm3-java-doc
+	dh_install -plib$(PACKAGE)-java-doc output/dist/doc/javadoc/user/* usr/share/doc/libasm4-java-doc/api
+	dh_install -plib$(PACKAGE)-java-doc output/dist/examples usr/share/doc/libasm4-java-doc
 
 clean::
 	mh_clean

@@ -1,4 +1,4 @@
-Document: libasm3-java-doc
+Document: libasm4-java-doc
 Title: API Javadoc for ObjectWeb ASM Bytecode Manipulation Framework
 Author: ObjectWeb ASM Project Team
 Abstract: This is the API Javadoc provided by the Objectweb
@@ -6,5 +6,5 @@ Abstract: This is the API Javadoc provided by the Objectweb
 Section: Programming
 
 Format: HTML
-Index: /usr/share/doc/libasm3-java-doc/api/index.html
-Files: /usr/share/doc/libasm3-java-doc/api/*.html
+Index: /usr/share/doc/libasm4-java-doc/api/index.html
+Files: /usr/share/doc/libasm4-java-doc/api/*.html
