@@ -228,7 +228,7 @@
     </java>
   </target>
 
-  <target name="sigtest">
+  <!--<target name="sigtest">
     <taskdef name="atest" classname="com.sun.tdk.signaturetest.ant.ATest" 
         classpath="${test}/lib/sigtestdev.jar"/>
     <atest filename="${test}/ASM.sig"
@@ -242,6 +242,6 @@
         <pathelement location="${out.dist}/lib/all/asm-all-${product.artifact}.jar"/>
       </classpath>
     </atest>
-  </target>
+  </target>-->
   
 </project>
