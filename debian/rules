@@ -27,7 +27,7 @@ binary-post-install/lib$(PACKAGE)-java::
 	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm4-debug-all -e$(VERSION) target/poms/asm-debug-all.pom output/dist/lib/all/asm-debug-all-$(VERSION).jar
 	# add osgi headers to asm3-all
 	jar umf debian/osgi.MF output/dist/lib/all/asm-all-$(VERSION).jar
-	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm3-all -e$(VERSION) target/poms/asm-all.pom output/dist/lib/all/asm-all-$(VERSION).jar
+	mh_installjar -plib$(PACKAGE)-java -l --usj-name=asm4-all -e$(VERSION) target/poms/asm-all.pom output/dist/lib/all/asm-all-$(VERSION).jar
 
 binary-post-install/lib$(PACKAGE)-java-doc::
 	dh_install -plib$(PACKAGE)-java-doc output/dist/doc/javadoc/user/* usr/share/doc/libasm4-java-doc/api
