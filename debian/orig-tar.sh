@@ -3,7 +3,7 @@
 set -eu
 
 VERSION=$2
-TAR=../asm3_$VERSION.orig.tar.gz
+TAR=../asm4_$VERSION.orig.tar.gz
 DIR=asm-$VERSION
 TAG=$(echo "ASM_$VERSION" | sed -re's,\.,_,g')
 
