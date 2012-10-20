@@ -1,4 +1,4 @@
-asm4 (4.0-1) precise; urgency=low
+asm4 (4.0-0~ppa1) precise; urgency=low
 
   * New upstream release.
   * debian/control: bump Standards-Version to 3.9.3
