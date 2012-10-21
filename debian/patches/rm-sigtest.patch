@@ -1,8 +1,6 @@
-diff --git a/build.xml b/build.xml
-index 99f7443..5e03b19 100644
 --- a/build.xml
 +++ b/build.xml
-@@ -483,7 +483,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+@@ -492,7 +492,7 @@
    </target>
    -->
  
@@ -11,7 +9,7 @@ index 99f7443..5e03b19 100644
  		<zip zipFile="${out.dist}/src.zip" basedir="${src}" excludes="**/optimizer/**/*" />
  	</target>
  
-@@ -531,13 +531,13 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+@@ -546,13 +546,13 @@
  	<!-- =====  BINARY COMPATIBILITY   ==== -->
  	<!-- ================================== -->
  
@@ -27,11 +25,9 @@ index 99f7443..5e03b19 100644
  
  	<!-- =================================== -->
  	<!-- ==========     CLEAN     ========== -->
-diff --git a/test/build.xml b/test/build.xml
-index a76e715..1480c7c 100644
 --- a/test/build.xml
 +++ b/test/build.xml
-@@ -211,7 +211,7 @@
+@@ -213,7 +213,7 @@
    <!-- =====  BINARY COMPATIBILITY   ==== -->
    <!-- ================================== -->
    
@@ -40,7 +36,7 @@ index a76e715..1480c7c 100644
      <java classname="com.sun.tdk.signaturetest.Setup">
        <classpath>
          <pathelement location="${test}/lib/sigtestdev.jar"/>
-@@ -226,9 +226,9 @@
+@@ -228,9 +228,9 @@
        <arg value="-filename"/>
        <arg value="${test}/ASM.sig"/>
      </java>
@@ -52,7 +48,7 @@ index a76e715..1480c7c 100644
      <taskdef name="atest" classname="com.sun.tdk.signaturetest.ant.ATest" 
          classpath="${test}/lib/sigtestdev.jar"/>
      <atest filename="${test}/ASM.sig"
-@@ -242,6 +242,6 @@
+@@ -244,6 +244,6 @@
          <pathelement location="${out.dist}/lib/all/asm-all-${product.artifact}.jar"/>
        </classpath>
      </atest>
