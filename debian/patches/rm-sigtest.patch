@@ -1,3 +1,32 @@
+diff --git a/build.xml b/build.xml
+index 99f7443..5e03b19 100644
+--- a/build.xml
++++ b/build.xml
+@@ -483,7 +483,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+   </target>
+   -->
+ 
+-	<target name="dist" depends="jar,sigtest,jdoc,examples">
++	<target name="dist" depends="jar,jdoc,examples">
+ 		<zip zipFile="${out.dist}/src.zip" basedir="${src}" excludes="**/optimizer/**/*" />
+ 	</target>
+ 
+@@ -531,13 +531,13 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ 	<!-- =====  BINARY COMPATIBILITY   ==== -->
+ 	<!-- ================================== -->
+ 
+-	<target name="sigtest-setup" depends="jar">
++	<!--<target name="sigtest-setup" depends="jar">
+ 		<ant antfile="${test}/build.xml" target="sigtest-setup" inheritRefs="true" />
+ 	</target>
+ 
+ 	<target name="sigtest" depends="jar">
+ 		<ant antfile="${test}/build.xml" target="sigtest" inheritRefs="true" />
+-	</target>
++	</target>-->
+ 
+ 	<!-- =================================== -->
+ 	<!-- ==========     CLEAN     ========== -->
 diff --git a/test/build.xml b/test/build.xml
 index a76e715..1480c7c 100644
 --- a/test/build.xml
