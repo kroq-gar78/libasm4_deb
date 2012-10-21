@@ -1,3 +1,9 @@
+asm4 (4.1-0~ppa1) precise; urgency=low
+
+  * New upstream release
+
+ -- Aditya Vaidya <kroq.gar78@gmail.com>  Sat, 20 Oct 2012 22:13:25 -0500
+
 asm4 (4.0-0~ppa1) precise; urgency=low
 
   * New upstream release.
